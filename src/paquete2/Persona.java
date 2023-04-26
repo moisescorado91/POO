@@ -7,11 +7,14 @@ package paquete2;
  */
 public class Persona {
     
-   
+   //variables donde vamos a alojar los datos quen nos van enviar
+    //encapsulados de tipo private
     private  String nombre = "", direccion = "";
     private int edad;
     
+    //metodo constructor
     public Persona(String nombre, String direccion, int edad){
+        //this hace referencia a las variables de nuestra clase
         this.nombre = nombre;
         this.direccion = direccion;
         this.edad = edad;
@@ -43,7 +46,8 @@ public class Persona {
     public  void setDireccion(String direccion){
         this.direccion = direccion;
     }
-            
+    
+    //metodo que imprime la informacion quen nos enviaron de la clase principal
     public void imprimirPersona(){
         System.out.println("nombre Ingresado: " + nombre + " EDAD Ingresado: " + edad);
         System.out.println("La direccion ingresada es: "+ direccion);
